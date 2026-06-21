@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Parent Observer Accounts: What Parents Need to Know | Daily Summa</title>
+<meta name="description" content="A Canvas parent observer account lets you view your child's assignments and grades without their login — but it only works if you remember to check it. Here's what parents need to know.">
+<link rel="canonical" href="https://dailysumma.com/resources/canvas-parent-observer-accounts.html">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Canvas Parent Observer Accounts: What Parents Need to Know">
+<meta property="og:description" content="A Canvas parent observer account lets you view your child's assignments and grades without their login — but it only works if you remember to check it.">
+<meta property="og:url" content="https://dailysumma.com/resources/canvas-parent-observer-accounts.html">
+<meta property="og:site_name" content="Daily Summa">
+<meta name="twitter:card" content="summary">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- FAQ structured data for rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need my child's password to set up a Canvas parent account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You don't need their login credentials. You need a pairing code, which your student generates themselves from their own account, or credentials issued directly by the school."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see grades the moment a teacher enters them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if the teacher posts grades immediately, which isn't guaranteed. Canvas lets teachers hold grades until they're ready to release them, so there can be a delay between a grade being entered and it becoming visible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Canvas notify me automatically when something is missing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canvas has notification settings you can configure, but they aren't proactive by default and many parents find them inconsistent — easy to under-configure, or easy to start ignoring once the volume builds up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my access if my child changes schools mid-year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your observer account is tied to your child's enrollment at a specific school. If they transfer, you'll typically need to set up a new pairing with the new school's Canvas instance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a parent observer account the same at every school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The feature is part of Canvas, but each district configures how much teachers are required to use it, how grades are released, and how pairing codes are issued. What works smoothly at one school may work differently at another."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  --navy:#0f1923; --navy-mid:#162030; --gold:#c9a84c; --gold-light:#e8c96d;
+  --gold-dim:#c9a84c20; --cream:#f5f0e8; --cream-dark:#ede8df;
+  --text:#1a1a2e; --text-mid:#4a4a6a; --text-light:#8a8aaa; --white:#ffffff;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+       background:var(--cream); color:var(--text); line-height:1.6; }
+a { color:var(--gold); }
+
+/* nav (matches index.html) */
+.skip-nav { position:absolute; left:-9999px; }
+.skip-nav:focus { left:12px; top:12px; background:var(--navy); color:#fff; padding:8px 14px; border-radius:6px; z-index:100; }
+nav { display:flex; align-items:center; justify-content:space-between;
+      padding:20px 80px; background:var(--navy); }
+.nav-logo { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#fff; text-decoration:none; }
+.nav-logo span { color:var(--gold); }
+.nav-actions { display:flex; align-items:center; gap:22px; }
+.nav-login { color:rgba(255,255,255,0.7); text-decoration:none; font-size:15px; }
+.nav-login:hover { color:#fff; }
+.nav-cta { background:var(--gold); color:var(--navy); padding:10px 20px; border-radius:8px;
+           text-decoration:none; font-size:15px; font-weight:600; }
+.nav-cta:hover { background:var(--gold-light); }
+
+/* article */
+.article-wrap { max-width:760px; margin:0 auto; padding:54px 24px 80px; }
+.breadcrumb { font-size:13px; color:var(--text-light); margin-bottom:22px; }
+.breadcrumb a { color:var(--text-mid); text-decoration:none; }
+.breadcrumb a:hover { color:var(--gold); }
+h1 { font-family:'Playfair Display',serif; font-size:38px; line-height:1.2; font-weight:700;
+     color:var(--navy); margin-bottom:24px; }
+.article-wrap h2 { font-family:'Playfair Display',serif; font-size:25px; line-height:1.3;
+     color:var(--navy); margin:38px 0 14px; }
+.article-wrap p { font-size:17px; color:var(--text-mid); margin-bottom:16px; }
+.article-wrap ul { margin:0 0 16px 22px; }
+.article-wrap li { font-size:17px; color:var(--text-mid); margin-bottom:8px; }
+.article-wrap strong { color:var(--text); }
+
+/* quick answer box */
+.quick-answer { background:var(--white); border-left:4px solid var(--gold);
+     border-radius:8px; padding:22px 26px; margin-bottom:34px;
+     box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.quick-answer .qa-label { font-size:12px; font-weight:700; text-transform:uppercase;
+     letter-spacing:.1em; color:var(--gold); margin-bottom:8px; }
+.quick-answer p { font-size:18px; color:var(--text); margin:0; font-weight:500; }
+
+/* daily summa mention */
+.ds-mention { background:var(--navy); color:#e8e8f0; border-radius:10px;
+     padding:24px 28px; margin:30px 0; }
+.ds-mention p { color:#d4d4e2; margin:0; font-size:16.5px; }
+.ds-mention a { color:var(--gold-light); font-weight:600; }
+
+/* key takeaways */
+.takeaways { background:var(--cream-dark); border-radius:10px; padding:26px 30px; margin:38px 0; }
+.takeaways .kt-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:14px; }
+.takeaways ul { margin:0 0 0 20px; }
+.takeaways li { font-size:16px; color:var(--text-mid); margin-bottom:10px; }
+
+/* faq */
+.faq { margin-top:42px; }
+.faq-q { font-weight:600; color:var(--navy); font-size:17.5px; margin:24px 0 6px; }
+.faq-a { font-size:16.5px; color:var(--text-mid); margin:0; }
+
+hr { border:none; border-top:1px solid rgba(15,25,35,0.1); margin:40px 0; }
+.related { margin-top:46px; border-top:1px solid rgba(15,25,35,0.1); padding-top:28px; }
+.related .rel-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:16px; }
+.related a { display:block; background:var(--white); border-radius:8px; padding:16px 20px; margin-bottom:12px; text-decoration:none; color:var(--navy); font-weight:600; font-size:16px; box-shadow:0 1px 8px rgba(15,25,35,0.05); border:1px solid transparent; transition:border-color .15s; }
+.related a:hover { border-color:var(--gold); }
+
+/* cta strip */
+.cta-strip { text-align:center; background:var(--white); border-radius:12px;
+     padding:38px 28px; margin-top:48px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.cta-strip h3 { font-family:'Playfair Display',serif; font-size:24px; color:var(--navy); margin-bottom:10px; }
+.cta-strip p { font-size:16px; color:var(--text-mid); margin-bottom:20px; }
+.cta-strip a { background:var(--gold); color:var(--navy); padding:13px 26px; border-radius:8px;
+     text-decoration:none; font-weight:600; font-size:16px; display:inline-block; }
+.cta-strip a:hover { background:var(--gold-light); }
+
+/* footer (matches index.html) */
+footer { padding:40px 80px; background:#080f17; display:flex; align-items:center;
+     justify-content:space-between; flex-wrap:wrap; gap:16px; }
+.footer-logo { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:rgba(255,255,255,0.4); }
+.footer-logo span { color:var(--gold); }
+.footer-links { display:flex; gap:24px; flex-wrap:wrap; }
+.footer-links a { font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none; }
+.footer-text { font-size:12px; color:rgba(255,255,255,0.2); }
+
+@media (max-width:768px) {
+  nav { padding:16px 22px; }
+  footer { padding:30px 22px; }
+  h1 { font-size:30px; }
+  .article-wrap { padding:36px 20px 60px; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+<nav>
+  <a href="/" class="nav-logo">Daily<span>Summa</span></a>
+  <div class="nav-actions">
+    <a href="/resources/" class="nav-login">Resources</a>
+    <a href="/contact" class="nav-login">Contact</a>
+    <a href="/login" class="nav-login">Log in</a>
+    <a href="/signup" class="nav-cta">Get Started →</a>
+  </div>
+</nav>
+
+<article class="article-wrap" id="main-content">
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/resources/">Resources</a> &rsaquo; Canvas Parent Observer Accounts</div>
+
+  <h1>Canvas Parent Observer Accounts: What Parents Need to Know</h1>
+
+  <div class="quick-answer">
+    <div class="qa-label">Quick Answer</div>
+    <p>A Canvas parent observer account lets a parent view their child's assignments and grades without logging in as the student — but it only works if you remember to check it, since Canvas doesn't proactively push that information to you.</p>
+  </div>
+
+  <p>A Canvas parent observer account lets a parent or guardian view their child's assignments, grades, and course activity directly in Canvas, without using the student's own login. Most districts that use Canvas support this feature, though the exact setup process and how much detail parents can see varies by school.</p>
+
+  <p>If your child's school uses Canvas, this is the official way to keep an eye on their work — but it comes with some real limitations parents should know about before relying on it as their main system.</p>
+
+  <h2>How do you get a Canvas parent observer account?</h2>
+  <p>Setup usually happens one of two ways:</p>
+  <ul>
+    <li><strong>Self-enrollment with a pairing code.</strong> Your student generates a code from their own Canvas account (under Settings &rarr; Pairing Codes), and you enter that code when creating your parent account at your district's Canvas URL.</li>
+    <li><strong>District-issued access.</strong> Some schools create parent accounts automatically at enrollment and email login credentials directly.</li>
+  </ul>
+  <p>Either way, once it's set up, you log in separately from your child — your account is linked to theirs as an "observer," with view-only access.</p>
+
+  <h2>What can a parent actually see in Canvas?</h2>
+  <p>A parent observer account typically shows:</p>
+  <ul>
+    <li>Assignments and due dates</li>
+    <li>Submitted vs. missing work</li>
+    <li>Grades, where the teacher has posted them</li>
+    <li>Course announcements and calendar events</li>
+  </ul>
+  <p>What you can see depends heavily on how each teacher configures their course. Some teachers post grades the same day; others update once a week. Some use Canvas for everything; others use it only for a syllabus and post real assignments elsewhere. This inconsistency is one of the most common frustrations parents report — the account works, but the picture it shows is only as complete as each teacher makes it.</p>
+
+  <h2>Why does it stop working over school breaks or at year's end?</h2>
+  <p>Canvas parent accounts lose access to a lot of course detail — course names, assignment lists, grading periods — within a couple of weeks after a term or school year ends. The basic enrollment record stays visible, but the rich detail does not. If you're trying to look back at how a semester went after the fact, you may find the data is gone.</p>
+
+  <h2>How does a parent observer account differ from a student login?</h2>
+  <p>A student's Canvas login shows their full course experience — including content a parent account may not surface the same way, like draft submissions or some peer-review tools. The observer role is intentionally more limited: it's built to let a parent monitor progress, not act as a second student account.</p>
+
+  <h2>Why parents still miss things even with an observer account set up</h2>
+  <p>Having the account doesn't mean you check it. Canvas wasn't built to proactively notify you the way a daily reminder would — its native notifications are configurable, but many parents either don't set them up correctly or get buried under volume and start ignoring them. The account exists, but the habit of logging in regularly is the part that tends to break down, especially during busy weeks.</p>
+
+  <div class="ds-mention">
+    <p>This is the gap a tool like <a href="/">Daily Summa</a> is built for — it connects to the same parent-observer access Canvas already provides, but instead of requiring you to log in and check, it sends a short daily summary by email or text: what's due, what's missing, what changed. The Canvas account is still the source of truth; Daily Summa is just the part that reaches you without you having to remember to look.</p>
+  </div>
+
+  <h2>Is a parent observer account required, or optional?</h2>
+  <p>It's optional, and Canvas works fine without it — your child can still do all their schoolwork without you ever creating one. But if you want any visibility into their day-to-day academic activity, the observer account is the only official way Canvas provides it.</p>
+
+  <div class="takeaways">
+    <div class="kt-label">Key Takeaways</div>
+    <ul>
+      <li>Canvas observer accounts give parents real visibility, but access and detail vary by teacher and school.</li>
+      <li>Notifications are configurable, not proactive — you have to set them up, and many parents either skip this or eventually start ignoring them.</li>
+      <li>Course detail (assignment lists, grading periods) disappears from parent accounts a few weeks after a term ends.</li>
+      <li>The account itself usually works fine — it's the habit of logging in regularly that tends to break down.</li>
+    </ul>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-q">Do I need my child's password to set up a Canvas parent account?</div>
+    <p class="faq-a">No. You don't need their login credentials. You need a pairing code, which your student generates themselves from their own account, or credentials issued directly by the school.</p>
+
+    <div class="faq-q">Can I see grades the moment a teacher enters them?</div>
+    <p class="faq-a">Only if the teacher posts grades immediately, which isn't guaranteed. Canvas lets teachers hold grades until they're ready to release them, so there can be a delay between a grade being entered and it becoming visible.</p>
+
+    <div class="faq-q">Does Canvas notify me automatically when something is missing?</div>
+    <p class="faq-a">Canvas has notification settings you can configure, but they aren't proactive by default and many parents find them inconsistent — easy to under-configure, or easy to start ignoring once the volume builds up.</p>
+
+    <div class="faq-q">What happens to my access if my child changes schools mid-year?</div>
+    <p class="faq-a">Your observer account is tied to your child's enrollment at a specific school. If they transfer, you'll typically need to set up a new pairing with the new school's Canvas instance.</p>
+
+    <div class="faq-q">Is a parent observer account the same at every school?</div>
+    <p class="faq-a">No. The feature is part of Canvas, but each district configures how much teachers are required to use it, how grades are released, and how pairing codes are issued. What works smoothly at one school may work differently at another.</p>
+  </div>
+
+  <div class="related">
+    <div class="rel-label">Related reading</div>
+    <a href="/resources/canvas-notifications-not-enough.html">Why Canvas Notifications Aren't Enough for Many Parents &rarr;</a>
+    <a href="/resources/missing-assignment-alerts.html">How to Get Notified When Your Child Misses an Assignment &rarr;</a>
+  </div>
+
+  <div class="cta-strip">
+    <h3>Stop remembering to check.</h3>
+    <p>Daily Summa turns the Canvas access you already have into a short daily summary — delivered to your inbox or phone.</p>
+    <a href="/signup">Get Started &rarr;</a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-logo">Daily<span>Summa</span></div>
+  <div class="footer-links">
+    <a href="/pricing">Pricing</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="mailto:hello@dailysumma.com">Contact</a>
+  </div>
+  <div class="footer-text">© 2026 Daily Summa · hello@dailysumma.com</div>
+</footer>
+</body>
+</html>

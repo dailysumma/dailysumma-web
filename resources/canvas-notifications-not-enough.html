@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Canvas Notifications Aren't Enough for Many Parents | Daily Summa</title>
+<meta name="description" content="Canvas notifications are opt-in, easy to misconfigure, and easy to ignore once volume builds up — which is why many parents still miss assignments even with notifications on.">
+<link rel="canonical" href="https://dailysumma.com/resources/canvas-notifications-not-enough.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why Canvas Notifications Aren't Enough for Many Parents">
+<meta property="og:description" content="Canvas notifications are opt-in, easy to misconfigure, and easy to ignore — which is why many parents still miss assignments even with notifications on.">
+<meta property="og:url" content="https://dailysumma.com/resources/canvas-notifications-not-enough.html">
+<meta property="og:site_name" content="Daily Summa">
+<meta name="twitter:card" content="summary">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I customize which Canvas notifications I receive as a parent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Canvas allows granular control over notification types and frequency (immediately, daily digest, weekly digest, or off) for each event category, accessible from the account notification settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why didn't I get notified about a missing assignment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canvas typically doesn't generate a notification simply because an assignment is missing — it notifies on specific events like grading or new content, not on the absence of a submission. A missing assignment often only becomes visible if you check the gradebook directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Canvas notification settings carry over between school years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notification preferences are tied to your account, not a specific course or term, so they generally do carry over — but it's worth checking each year, since new teachers may use Canvas differently than the year before."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a way to get a single daily summary instead of many separate Canvas emails?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canvas offers a daily digest setting for some notification types, which groups certain events into one email rather than several. It's still event-based rather than a full status summary of assignments, grades, and what's missing."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  --navy:#0f1923; --navy-mid:#162030; --gold:#c9a84c; --gold-light:#e8c96d;
+  --gold-dim:#c9a84c20; --cream:#f5f0e8; --cream-dark:#ede8df;
+  --text:#1a1a2e; --text-mid:#4a4a6a; --text-light:#8a8aaa; --white:#ffffff;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+       background:var(--cream); color:var(--text); line-height:1.6; }
+a { color:var(--gold); }
+.skip-nav { position:absolute; left:-9999px; }
+.skip-nav:focus { left:12px; top:12px; background:var(--navy); color:#fff; padding:8px 14px; border-radius:6px; z-index:100; }
+nav { display:flex; align-items:center; justify-content:space-between; padding:20px 80px; background:var(--navy); }
+.nav-logo { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#fff; text-decoration:none; }
+.nav-logo span { color:var(--gold); }
+.nav-actions { display:flex; align-items:center; gap:22px; }
+.nav-login { color:rgba(255,255,255,0.7); text-decoration:none; font-size:15px; }
+.nav-login:hover { color:#fff; }
+.nav-cta { background:var(--gold); color:var(--navy); padding:10px 20px; border-radius:8px; text-decoration:none; font-size:15px; font-weight:600; }
+.nav-cta:hover { background:var(--gold-light); }
+.article-wrap { max-width:760px; margin:0 auto; padding:54px 24px 80px; }
+.breadcrumb { font-size:13px; color:var(--text-light); margin-bottom:22px; }
+.breadcrumb a { color:var(--text-mid); text-decoration:none; }
+.breadcrumb a:hover { color:var(--gold); }
+h1 { font-family:'Playfair Display',serif; font-size:38px; line-height:1.2; font-weight:700; color:var(--navy); margin-bottom:24px; }
+.article-wrap h2 { font-family:'Playfair Display',serif; font-size:25px; line-height:1.3; color:var(--navy); margin:38px 0 14px; }
+.article-wrap p { font-size:17px; color:var(--text-mid); margin-bottom:16px; }
+.article-wrap ul { margin:0 0 16px 22px; }
+.article-wrap li { font-size:17px; color:var(--text-mid); margin-bottom:8px; }
+.article-wrap strong { color:var(--text); }
+.quick-answer { background:var(--white); border-left:4px solid var(--gold); border-radius:8px; padding:22px 26px; margin-bottom:34px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.quick-answer .qa-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); margin-bottom:8px; }
+.quick-answer p { font-size:18px; color:var(--text); margin:0; font-weight:500; }
+.ds-mention { background:var(--navy); color:#e8e8f0; border-radius:10px; padding:24px 28px; margin:30px 0; }
+.ds-mention p { color:#d4d4e2; margin:0; font-size:16.5px; }
+.ds-mention a { color:var(--gold-light); font-weight:600; }
+.takeaways { background:var(--cream-dark); border-radius:10px; padding:26px 30px; margin:38px 0; }
+.takeaways .kt-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:14px; }
+.takeaways ul { margin:0 0 0 20px; }
+.takeaways li { font-size:16px; color:var(--text-mid); margin-bottom:10px; }
+.faq { margin-top:42px; }
+.faq-q { font-weight:600; color:var(--navy); font-size:17.5px; margin:24px 0 6px; }
+.faq-a { font-size:16.5px; color:var(--text-mid); margin:0; }
+.related { margin-top:46px; border-top:1px solid rgba(15,25,35,0.1); padding-top:28px; }
+.related .rel-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:16px; }
+.related a { display:block; background:var(--white); border-radius:8px; padding:16px 20px; margin-bottom:12px; text-decoration:none; color:var(--navy); font-weight:600; font-size:16px; box-shadow:0 1px 8px rgba(15,25,35,0.05); border:1px solid transparent; transition:border-color .15s; }
+.related a:hover { border-color:var(--gold); }
+.cta-strip { text-align:center; background:var(--white); border-radius:12px; padding:38px 28px; margin-top:48px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.cta-strip h3 { font-family:'Playfair Display',serif; font-size:24px; color:var(--navy); margin-bottom:10px; }
+.cta-strip p { font-size:16px; color:var(--text-mid); margin-bottom:20px; }
+.cta-strip a { background:var(--gold); color:var(--navy); padding:13px 26px; border-radius:8px; text-decoration:none; font-weight:600; font-size:16px; display:inline-block; }
+.cta-strip a:hover { background:var(--gold-light); }
+footer { padding:40px 80px; background:#080f17; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+.footer-logo { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:rgba(255,255,255,0.4); }
+.footer-logo span { color:var(--gold); }
+.footer-links { display:flex; gap:24px; flex-wrap:wrap; }
+.footer-links a { font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none; }
+.footer-text { font-size:12px; color:rgba(255,255,255,0.2); }
+@media (max-width:768px) {
+  nav { padding:16px 22px; }
+  footer { padding:30px 22px; }
+  h1 { font-size:30px; }
+  .article-wrap { padding:36px 20px 60px; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+<nav>
+  <a href="/" class="nav-logo">Daily<span>Summa</span></a>
+  <div class="nav-actions">
+    <a href="/resources/" class="nav-login">Resources</a>
+    <a href="/contact" class="nav-login">Contact</a>
+    <a href="/login" class="nav-login">Log in</a>
+    <a href="/signup" class="nav-cta">Get Started →</a>
+  </div>
+</nav>
+
+<article class="article-wrap" id="main-content">
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/resources/">Resources</a> &rsaquo; Why Canvas Notifications Aren't Enough</div>
+
+  <h1>Why Canvas Notifications Aren't Enough for Many Parents</h1>
+
+  <div class="quick-answer">
+    <div class="qa-label">Quick Answer</div>
+    <p>Canvas notifications exist, but they're opt-in, easy to misconfigure, and easy to ignore once the volume builds up — which is why many parents who've "turned on notifications" still find out about a missing assignment after it's too late.</p>
+  </div>
+
+  <p>Canvas does have a notification system. Parents often assume that once it's switched on, they'll automatically hear about anything that matters — a missing assignment, a dropping grade, a new message from a teacher. In practice, the system works exactly as configured, and most parents never configure it the way they assume it already works.</p>
+
+  <h2>How do Canvas notifications actually work?</h2>
+  <p>Canvas lets users — including parent observer accounts — choose how and when to be notified for dozens of separate event types: grading, assignment changes, announcements, conversation messages, and more. Each event type can be set to notify immediately, in a daily summary, in a weekly summary, or not at all.</p>
+  <p>That granularity is powerful for someone who sets it up carefully. For most parents, it means the defaults — whatever they happened to be when the account was created — are what they're actually living with, often without realizing it.</p>
+
+  <h2>Why don't notifications cover what parents actually want to know?</h2>
+  <p>Canvas can tell you a grade was entered or an assignment was created. What it generally can't tell you is the thing parents most want to know: <strong>is my kid behind right now?</strong> Canvas notifies on individual events, not on a running picture of what's due, what's missing, and how things are trending. Connecting those dots is left to the parent, manually, every time.</p>
+
+  <h2>Why do parents stop paying attention to Canvas notifications?</h2>
+  <p>Volume is the usual culprit. A parent who turns on notifications for "everything" in a course with an active teacher can end up with several emails a day — most of them low-stakes (an announcement, a small assignment update). After a few weeks, those emails start getting skimmed or auto-filed, and the one that actually mattered — a missing major assignment — gets lost in the same pile.</p>
+  <p>The opposite problem happens too: a parent who turns on very little to avoid the noise ends up not hearing about anything at all, including the things they actually wanted to catch.</p>
+
+  <h2>What's the difference between a notification and a daily summary?</h2>
+  <p>A notification tells you something happened. A daily summary tells you where things stand. The first is reactive and event-by-event; the second is a snapshot — what's due, what's missing, what changed since yesterday — delivered on a predictable schedule whether or not anything "notification-worthy" technically occurred.</p>
+
+  <div class="ds-mention">
+    <p>This is the gap a tool like <a href="/">Daily Summa</a> is built to close. It connects to the same Canvas parent-observer access described in our <a href="/resources/canvas-parent-observer-accounts.html">guide to Canvas parent observer accounts</a>, but instead of relying on Canvas's event-by-event notification settings, it compares each day's data to the day before and sends a short summary of what actually changed — no configuration required, and no volume problem to manage.</p>
+  </div>
+
+  <h2>Should parents turn off Canvas notifications entirely?</h2>
+  <p>Not necessarily — Canvas notifications are still useful for things like direct messages from a teacher or announcements about a field trip. The practical fix for most families isn't turning notifications off, but not relying on them as the only system for tracking assignments and grades day to day.</p>
+
+  <div class="takeaways">
+    <div class="kt-label">Key Takeaways</div>
+    <ul>
+      <li>Canvas notifications are opt-in and event-based, not a built-in daily summary of where a student stands.</li>
+      <li>Defaults are often left unconfigured, so many parents who think notifications are "on" aren't actually getting what they expect.</li>
+      <li>High notification volume causes important alerts to get lost; low volume causes parents to miss things entirely.</li>
+      <li>A daily summary and a notification serve different purposes — one reports an event, the other reports a status.</li>
+    </ul>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-q">Can I customize which Canvas notifications I receive as a parent?</div>
+    <p class="faq-a">Yes. Canvas allows granular control over notification types and frequency (immediately, daily digest, weekly digest, or off) for each event category, accessible from the account notification settings.</p>
+
+    <div class="faq-q">Why didn't I get notified about a missing assignment?</div>
+    <p class="faq-a">Canvas typically doesn't generate a notification simply because an assignment is missing — it notifies on specific events like grading or new content, not on the absence of a submission. A missing assignment often only becomes visible if you check the gradebook directly.</p>
+
+    <div class="faq-q">Do Canvas notification settings carry over between school years?</div>
+    <p class="faq-a">Notification preferences are tied to your account, not a specific course or term, so they generally do carry over — but it's worth checking each year, since new teachers may use Canvas differently than the year before.</p>
+
+    <div class="faq-q">Is there a way to get a single daily summary instead of many separate Canvas emails?</div>
+    <p class="faq-a">Canvas offers a daily digest setting for some notification types, which groups certain events into one email rather than several. It's still event-based rather than a full status summary of assignments, grades, and what's missing.</p>
+  </div>
+
+  <div class="related">
+    <div class="rel-label">Related reading</div>
+    <a href="/resources/canvas-parent-observer-accounts.html">Canvas Parent Observer Accounts: What Parents Need to Know &rarr;</a>
+    <a href="/resources/missing-assignment-alerts.html">How to Get Notified When Your Child Misses an Assignment &rarr;</a>
+  </div>
+
+  <div class="cta-strip">
+    <h3>A status, not a pile of notifications.</h3>
+    <p>Daily Summa sends one short daily summary — what's due, what's missing, what changed — instead of leaving you to wire up Canvas alerts.</p>
+    <a href="/signup">Get Started &rarr;</a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-logo">Daily<span>Summa</span></div>
+  <div class="footer-links">
+    <a href="/pricing">Pricing</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/contact">Contact</a>
+  </div>
+  <div class="footer-text">© 2026 Daily Summa · hello@dailysumma.com</div>
+</footer>
+</body>
+</html>

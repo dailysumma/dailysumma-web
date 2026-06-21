@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Get Notified When Your Child Misses an Assignment | Daily Summa</title>
+<meta name="description" content="There's no single switch in Canvas that alerts you the moment an assignment goes missing. Here are the real options — and how to actually catch missing work in time.">
+<link rel="canonical" href="https://dailysumma.com/resources/missing-assignment-alerts.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Get Notified When Your Child Misses an Assignment">
+<meta property="og:description" content="There's no single switch in Canvas that alerts you the moment an assignment goes missing. Here are the real options.">
+<meta property="og:url" content="https://dailysumma.com/resources/missing-assignment-alerts.html">
+<meta property="og:site_name" content="Daily Summa">
+<meta name="twitter:card" content="summary">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will Canvas ever notify me the exact day an assignment becomes overdue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not directly. Canvas notifications are tied to specific events like grading or content changes, not to a due date silently passing without a submission."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does turning on every notification setting solve this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It gets closer, but it also increases volume significantly, which often leads to important alerts getting buried among lower-priority ones over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can teachers turn on a missing-assignment alert for parents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Teachers don't control parent notification settings — those are configured on the parent's own account. A teacher's grading habits (how quickly they enter zeros for missing work) do affect how soon a grade-based notification would catch it, though."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between missing and late in Canvas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Canvas distinguishes these in the gradebook — missing generally means no submission exists past the due date, while late means a submission exists but came in after the deadline. Both are visible in the gradebook view, though not always called out clearly in notification emails."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  --navy:#0f1923; --navy-mid:#162030; --gold:#c9a84c; --gold-light:#e8c96d;
+  --gold-dim:#c9a84c20; --cream:#f5f0e8; --cream-dark:#ede8df;
+  --text:#1a1a2e; --text-mid:#4a4a6a; --text-light:#8a8aaa; --white:#ffffff;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+       background:var(--cream); color:var(--text); line-height:1.6; }
+a { color:var(--gold); }
+.skip-nav { position:absolute; left:-9999px; }
+.skip-nav:focus { left:12px; top:12px; background:var(--navy); color:#fff; padding:8px 14px; border-radius:6px; z-index:100; }
+nav { display:flex; align-items:center; justify-content:space-between; padding:20px 80px; background:var(--navy); }
+.nav-logo { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#fff; text-decoration:none; }
+.nav-logo span { color:var(--gold); }
+.nav-actions { display:flex; align-items:center; gap:22px; }
+.nav-login { color:rgba(255,255,255,0.7); text-decoration:none; font-size:15px; }
+.nav-login:hover { color:#fff; }
+.nav-cta { background:var(--gold); color:var(--navy); padding:10px 20px; border-radius:8px; text-decoration:none; font-size:15px; font-weight:600; }
+.nav-cta:hover { background:var(--gold-light); }
+.article-wrap { max-width:760px; margin:0 auto; padding:54px 24px 80px; }
+.breadcrumb { font-size:13px; color:var(--text-light); margin-bottom:22px; }
+.breadcrumb a { color:var(--text-mid); text-decoration:none; }
+.breadcrumb a:hover { color:var(--gold); }
+h1 { font-family:'Playfair Display',serif; font-size:38px; line-height:1.2; font-weight:700; color:var(--navy); margin-bottom:24px; }
+.article-wrap h2 { font-family:'Playfair Display',serif; font-size:25px; line-height:1.3; color:var(--navy); margin:38px 0 14px; }
+.article-wrap p { font-size:17px; color:var(--text-mid); margin-bottom:16px; }
+.article-wrap ul { margin:0 0 16px 22px; }
+.article-wrap li { font-size:17px; color:var(--text-mid); margin-bottom:8px; }
+.article-wrap strong { color:var(--text); }
+.quick-answer { background:var(--white); border-left:4px solid var(--gold); border-radius:8px; padding:22px 26px; margin-bottom:34px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.quick-answer .qa-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); margin-bottom:8px; }
+.quick-answer p { font-size:18px; color:var(--text); margin:0; font-weight:500; }
+.ds-mention { background:var(--navy); color:#e8e8f0; border-radius:10px; padding:24px 28px; margin:30px 0; }
+.ds-mention p { color:#d4d4e2; margin:0; font-size:16.5px; }
+.ds-mention a { color:var(--gold-light); font-weight:600; }
+.takeaways { background:var(--cream-dark); border-radius:10px; padding:26px 30px; margin:38px 0; }
+.takeaways .kt-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:14px; }
+.takeaways ul { margin:0 0 0 20px; }
+.takeaways li { font-size:16px; color:var(--text-mid); margin-bottom:10px; }
+.faq { margin-top:42px; }
+.faq-q { font-weight:600; color:var(--navy); font-size:17.5px; margin:24px 0 6px; }
+.faq-a { font-size:16.5px; color:var(--text-mid); margin:0; }
+.related { margin-top:46px; border-top:1px solid rgba(15,25,35,0.1); padding-top:28px; }
+.related .rel-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:16px; }
+.related a { display:block; background:var(--white); border-radius:8px; padding:16px 20px; margin-bottom:12px; text-decoration:none; color:var(--navy); font-weight:600; font-size:16px; box-shadow:0 1px 8px rgba(15,25,35,0.05); border:1px solid transparent; transition:border-color .15s; }
+.related a:hover { border-color:var(--gold); }
+.cta-strip { text-align:center; background:var(--white); border-radius:12px; padding:38px 28px; margin-top:48px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.cta-strip h3 { font-family:'Playfair Display',serif; font-size:24px; color:var(--navy); margin-bottom:10px; }
+.cta-strip p { font-size:16px; color:var(--text-mid); margin-bottom:20px; }
+.cta-strip a { background:var(--gold); color:var(--navy); padding:13px 26px; border-radius:8px; text-decoration:none; font-weight:600; font-size:16px; display:inline-block; }
+.cta-strip a:hover { background:var(--gold-light); }
+footer { padding:40px 80px; background:#080f17; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+.footer-logo { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:rgba(255,255,255,0.4); }
+.footer-logo span { color:var(--gold); }
+.footer-links { display:flex; gap:24px; flex-wrap:wrap; }
+.footer-links a { font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none; }
+.footer-text { font-size:12px; color:rgba(255,255,255,0.2); }
+@media (max-width:768px) {
+  nav { padding:16px 22px; }
+  footer { padding:30px 22px; }
+  h1 { font-size:30px; }
+  .article-wrap { padding:36px 20px 60px; }
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+<nav>
+  <a href="/" class="nav-logo">Daily<span>Summa</span></a>
+  <div class="nav-actions">
+    <a href="/resources/" class="nav-login">Resources</a>
+    <a href="/contact" class="nav-login">Contact</a>
+    <a href="/login" class="nav-login">Log in</a>
+    <a href="/signup" class="nav-cta">Get Started →</a>
+  </div>
+</nav>
+
+<article class="article-wrap" id="main-content">
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/resources/">Resources</a> &rsaquo; Missing-Assignment Alerts</div>
+
+  <h1>How to Get Notified When Your Child Misses an Assignment</h1>
+
+  <div class="quick-answer">
+    <div class="qa-label">Quick Answer</div>
+    <p>There's no single switch in Canvas that alerts you the moment an assignment goes missing — you either have to check the gradebook yourself, configure several notification settings and hope they catch it, or use a tool that checks for you and sends a direct alert.</p>
+  </div>
+
+  <p>Parents searching for this usually want one thing: a clear ping the moment something is late or missing, instead of finding out at a parent-teacher conference or report card time. The honest answer is that Canvas, on its own, isn't built to do this automatically — but there are real ways to get closer to it.</p>
+
+  <h2>Why doesn't Canvas just tell me when something's missing?</h2>
+  <p>Canvas's notification system is built around events — a grade was posted, an assignment was created, a message was sent. "This assignment is now overdue and still has no submission" isn't a single event Canvas fires a notification for. To know an assignment is missing, you (or a system checking on your behalf) generally need to look at the gradebook or assignment list and compare due dates against what's been submitted.</p>
+
+  <h2>What's the closest thing to a missing-assignment alert inside Canvas?</h2>
+  <p>A few partial options exist:</p>
+  <ul>
+    <li><strong>Grade change notifications</strong>, set to "immediately," will tell you when a zero or low grade gets entered — but only after a teacher has graded the missing work, which can lag behind the due date by days or weeks.</li>
+    <li><strong>Course/assignment due date reminders</strong>, if enabled, can notify before something is due — but won't tell you afterward whether it was actually turned in.</li>
+    <li><strong>Manually checking the gradebook</strong> on a regular schedule remains the most reliable way to see missing work in Canvas directly, since it shows submission status in real time.</li>
+  </ul>
+  <p>None of these is quite the same as a same-day "this is now missing" alert, because Canvas's notification system wasn't designed around that specific moment.</p>
+
+  <h2>How often would I need to check Canvas manually to catch this myself?</h2>
+  <p>To catch a missing assignment close to when it actually becomes overdue, a parent would need to check the gradebook roughly once a day — more often during heavy assignment weeks. For most working parents, that's the part that doesn't survive contact with a real schedule. The account exists and works; the daily habit of opening it is what tends to fall away after the first few weeks.</p>
+
+  <h2>What does a tool built specifically for this look like?</h2>
+  <p>A daily-digest tool can solve the specific gap Canvas leaves open: it checks the gradebook on your behalf, every day, and compares it against the day before — so a newly missing assignment shows up as a flagged item the next morning, without you having to remember to look.</p>
+
+  <div class="ds-mention">
+    <p><a href="/">Daily Summa</a> is built around exactly this comparison. It connects through the same parent-observer access covered in our <a href="/resources/canvas-parent-observer-accounts.html">guide to Canvas parent observer accounts</a>, and each day's check is compared to the prior day's, so a newly missing assignment gets surfaced directly — by email or text — rather than waiting to be discovered. It also separates assignments that are genuinely missing from work that was likely turned in on paper, which Canvas can't always confirm — so a parent isn't told something's "missing" when it was actually handed in.</p>
+  </div>
+
+  <h2>Is there a way to do this for free, without a third-party tool?</h2>
+  <p>Yes, with effort: enable every relevant Canvas notification at "immediately," and build a personal habit of checking the gradebook daily, ideally at a consistent time. This works for some families. The honest tradeoff is that it relies entirely on the parent's own consistency, which is the exact thing most parents are trying to solve for when they start looking for an alert system in the first place.</p>
+
+  <div class="takeaways">
+    <div class="kt-label">Key Takeaways</div>
+    <ul>
+      <li>Canvas doesn't have a single built-in "this is now missing" alert — notifications are event-based, not status-based.</li>
+      <li>The most reliable native option is checking the gradebook directly, roughly daily, which is hard to sustain long-term.</li>
+      <li>Grade-change notifications can catch a missing assignment, but only after it's been graded, which may be well after the due date.</li>
+      <li>A daily comparison tool can flag newly missing work automatically by checking the day-over-day change instead of relying on a parent's memory.</li>
+    </ul>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-q">Will Canvas ever notify me the exact day an assignment becomes overdue?</div>
+    <p class="faq-a">Not directly. Canvas notifications are tied to specific events like grading or content changes, not to a due date silently passing without a submission.</p>
+
+    <div class="faq-q">Does turning on every notification setting solve this?</div>
+    <p class="faq-a">It gets closer, but it also increases volume significantly, which often leads to important alerts getting buried among lower-priority ones over time.</p>
+
+    <div class="faq-q">Can teachers turn on a missing-assignment alert for parents?</div>
+    <p class="faq-a">Teachers don't control parent notification settings — those are configured on the parent's own account. A teacher's grading habits (how quickly they enter zeros for missing work) do affect how soon a grade-based notification would catch it, though.</p>
+
+    <div class="faq-q">What's the difference between "missing" and "late" in Canvas?</div>
+    <p class="faq-a">Canvas distinguishes these in the gradebook — "missing" generally means no submission exists past the due date, while "late" means a submission exists but came in after the deadline. Both are visible in the gradebook view, though not always called out clearly in notification emails.</p>
+  </div>
+
+  <div class="related">
+    <div class="rel-label">Related reading</div>
+    <a href="/resources/canvas-parent-observer-accounts.html">Canvas Parent Observer Accounts: What Parents Need to Know &rarr;</a>
+    <a href="/resources/canvas-notifications-not-enough.html">Why Canvas Notifications Aren't Enough for Many Parents &rarr;</a>
+  </div>
+
+  <div class="cta-strip">
+    <h3>Catch missing work the next morning.</h3>
+    <p>Daily Summa checks every day and flags newly missing assignments for you — no daily gradebook habit required.</p>
+    <a href="/signup">Get Started &rarr;</a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-logo">Daily<span>Summa</span></div>
+  <div class="footer-links">
+    <a href="/pricing">Pricing</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/contact">Contact</a>
+  </div>
+  <div class="footer-text">© 2026 Daily Summa · hello@dailysumma.com</div>
+</footer>
+</body>
+</html>

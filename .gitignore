@@ -1,0 +1,7 @@
+# backups and editor noise
+*.bak
+*.bak.*
+*~
+.DS_Store
+# nginx default placeholder (not our content)
+index.nginx-debian.html
