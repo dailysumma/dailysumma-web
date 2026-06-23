@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Parent App vs. Observer Account: What's the Difference? | Daily Summa</title>
+<meta name="description" content="The Canvas Parent app and a Canvas observer account use the same underlying access — the app is just a mobile interface. There's no separate parent app account.">
+<link rel="canonical" href="https://dailysumma.com/resources/canvas-app-vs-observer.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Canvas Parent App vs. Observer Account: What's the Difference?">
+<meta property="og:description" content="The Canvas Parent app and a Canvas observer account use the same underlying access — the app is just a mobile interface for it.">
+<meta property="og:url" content="https://dailysumma.com/resources/canvas-app-vs-observer.html">
+<meta property="og:site_name" content="Daily Summa">
+<meta name="twitter:card" content="summary">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do I need to download the Canvas Parent app to monitor my child's grades?", "acceptedAnswer": { "@type": "Answer", "text": "No — everything available in the app is also accessible through a desktop or mobile browser using the same observer login." } },
+    { "@type": "Question", "name": "Can I get push notifications from the Canvas Parent app?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the app supports push notifications for the same event types covered by Canvas's broader notification system, configurable in the app's settings." } },
+    { "@type": "Question", "name": "Is the Canvas Parent app free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it's a free app provided by Instructure, the company behind Canvas, available for iOS and Android." } },
+    { "@type": "Question", "name": "Will setting up the app give me access to anything I didn't already have through the website?", "acceptedAnswer": { "@type": "Answer", "text": "No — the app surfaces the same data your observer account already has access to on desktop; it doesn't unlock additional permissions or information." } }
+  ]
+}
+</script>
+<style>
+:root { --navy:#0f1923; --navy-mid:#162030; --gold:#c9a84c; --gold-light:#e8c96d; --gold-dim:#c9a84c20; --cream:#f5f0e8; --cream-dark:#ede8df; --text:#1a1a2e; --text-mid:#4a4a6a; --text-light:#8a8aaa; --white:#ffffff; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif; background:var(--cream); color:var(--text); line-height:1.6; }
+a { color:var(--gold); }
+.skip-nav { position:absolute; left:-9999px; }
+.skip-nav:focus { left:12px; top:12px; background:var(--navy); color:#fff; padding:8px 14px; border-radius:6px; z-index:100; }
+nav { display:flex; align-items:center; justify-content:space-between; padding:20px 80px; background:var(--navy); }
+.nav-logo { font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#fff; text-decoration:none; }
+.nav-logo span { color:var(--gold); }
+.nav-actions { display:flex; align-items:center; gap:22px; }
+.nav-login { color:rgba(255,255,255,0.7); text-decoration:none; font-size:15px; }
+.nav-login:hover { color:#fff; }
+.nav-cta { background:var(--gold); color:var(--navy); padding:10px 20px; border-radius:8px; text-decoration:none; font-size:15px; font-weight:600; }
+.nav-cta:hover { background:var(--gold-light); }
+.article-wrap { max-width:760px; margin:0 auto; padding:54px 24px 80px; }
+.breadcrumb { font-size:13px; color:var(--text-light); margin-bottom:22px; }
+.breadcrumb a { color:var(--text-mid); text-decoration:none; }
+.breadcrumb a:hover { color:var(--gold); }
+h1 { font-family:'Playfair Display',serif; font-size:38px; line-height:1.2; font-weight:700; color:var(--navy); margin-bottom:24px; }
+.article-wrap h2 { font-family:'Playfair Display',serif; font-size:25px; line-height:1.3; color:var(--navy); margin:38px 0 14px; }
+.article-wrap p { font-size:17px; color:var(--text-mid); margin-bottom:16px; }
+.article-wrap ul { margin:0 0 16px 22px; }
+.article-wrap li { font-size:17px; color:var(--text-mid); margin-bottom:8px; }
+.article-wrap strong { color:var(--text); }
+.quick-answer { background:var(--white); border-left:4px solid var(--gold); border-radius:8px; padding:22px 26px; margin-bottom:34px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.quick-answer .qa-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); margin-bottom:8px; }
+.quick-answer p { font-size:18px; color:var(--text); margin:0; font-weight:500; }
+.ds-mention { background:var(--navy); color:#e8e8f0; border-radius:10px; padding:24px 28px; margin:30px 0; }
+.ds-mention p { color:#d4d4e2; margin:0; font-size:16.5px; }
+.ds-mention a { color:var(--gold-light); font-weight:600; }
+.takeaways { background:var(--cream-dark); border-radius:10px; padding:26px 30px; margin:38px 0; }
+.takeaways .kt-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:14px; }
+.takeaways ul { margin:0 0 0 20px; }
+.takeaways li { font-size:16px; color:var(--text-mid); margin-bottom:10px; }
+.faq { margin-top:42px; }
+.faq-q { font-weight:600; color:var(--navy); font-size:17.5px; margin:24px 0 6px; }
+.faq-a { font-size:16.5px; color:var(--text-mid); margin:0; }
+.related { margin-top:46px; border-top:1px solid rgba(15,25,35,0.1); padding-top:28px; }
+.related .rel-label { font-family:'Playfair Display',serif; font-size:20px; color:var(--navy); margin-bottom:16px; }
+.related a { display:block; background:var(--white); border-radius:8px; padding:16px 20px; margin-bottom:12px; text-decoration:none; color:var(--navy); font-weight:600; font-size:16px; box-shadow:0 1px 8px rgba(15,25,35,0.05); border:1px solid transparent; transition:border-color .15s; }
+.related a:hover { border-color:var(--gold); }
+.cta-strip { text-align:center; background:var(--white); border-radius:12px; padding:38px 28px; margin-top:48px; box-shadow:0 2px 14px rgba(15,25,35,0.06); }
+.cta-strip h3 { font-family:'Playfair Display',serif; font-size:24px; color:var(--navy); margin-bottom:10px; }
+.cta-strip p { font-size:16px; color:var(--text-mid); margin-bottom:20px; }
+.cta-strip a { background:var(--gold); color:var(--navy); padding:13px 26px; border-radius:8px; text-decoration:none; font-weight:600; font-size:16px; display:inline-block; }
+.cta-strip a:hover { background:var(--gold-light); }
+footer { padding:40px 80px; background:#080f17; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+.footer-logo { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:rgba(255,255,255,0.4); }
+.footer-logo span { color:var(--gold); }
+.footer-links { display:flex; gap:24px; flex-wrap:wrap; }
+.footer-links a { font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none; }
+.footer-text { font-size:12px; color:rgba(255,255,255,0.2); }
+@media (max-width:768px) { nav { padding:16px 22px; } footer { padding:30px 22px; } h1 { font-size:30px; } .article-wrap { padding:36px 20px 60px; } }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+<nav>
+  <a href="/" class="nav-logo">Daily<span>Summa</span></a>
+  <div class="nav-actions">
+    <a href="/resources/" class="nav-login">Resources</a>
+    <a href="/contact" class="nav-login">Contact</a>
+    <a href="/login" class="nav-login">Log in</a>
+    <a href="/signup" class="nav-cta">Get Started →</a>
+  </div>
+</nav>
+<article class="article-wrap" id="main-content">
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/resources/">Resources</a> &rsaquo; Canvas Parent App vs. Observer Account</div>
+  <h1>Canvas Parent App vs. Observer Account: What's the Difference?</h1>
+  <div class="quick-answer">
+    <div class="qa-label">Quick Answer</div>
+    <p>The Canvas Parent app and a Canvas observer account use the same underlying access — the app is just a mobile interface for it. There's no separate "parent app account"; signing in to the app uses the same observer login you'd use on a desktop browser.</p>
+  </div>
+  <p>Parents searching for "Canvas Parent app" are often trying to figure out if it's a different system from the parent observer account they've heard about, or if it requires separate setup. It doesn't — it's the same access, in a different wrapper.</p>
+  <h2>Is the Canvas Parent app a different account from an observer account?</h2>
+  <p>No. The Canvas Parent app is a mobile application that uses your existing parent observer login. If you've already set up observer access through a pairing code or district-issued credentials, you can use those same credentials to sign into the app — there's no separate registration.</p>
+  <h2>What can you do in the app that you can't do on desktop, or vice versa?</h2>
+  <p>The core information — assignments, grades, course activity — is largely the same across both. The app is built around mobile-friendly browsing and push notifications, which can make checking in feel quicker than navigating the desktop site on a phone browser. Some account-level settings, like detailed notification preferences, are sometimes easier to manage from a desktop browser.</p>
+  <h2>Does the app solve the same problems as a daily digest tool?</h2>
+  <p>Partially. The app makes it easier to <strong>check</strong> Canvas, but it doesn't change how often you need to check — you still have to open it and look to know what's changed. Push notifications from the app follow the same event-based logic as Canvas's email notifications: they tell you something happened, not necessarily the thing you most need to know, like a newly missing assignment.</p>
+  <h2>Why do some parents use both an app and a separate notification tool?</h2>
+  <p>The app is useful for occasionally looking something up — confirming a due date, checking a specific grade. A daily digest tool serves a different purpose: it removes the need to open anything at all on a normal day, by proactively sending what changed.</p>
+  <div class="ds-mention">
+    <p>Many families end up using the app for occasional lookups and a digest tool, like <a href="/">Daily Summa</a>, for the daily heads-up — the two aren't competing with each other, since Daily Summa uses the same observer access described in our <a href="/resources/canvas-parent-observer-accounts.html">guide to Canvas parent observer accounts</a> rather than replacing it.</p>
+  </div>
+  <h2>Which one should a parent set up first?</h2>
+  <p>The observer account itself is the foundation — it's what both the app and any third-party tool ultimately depend on. Setting that up first (via a pairing code from your student) is the necessary first step regardless of how you plan to check it afterward.</p>
+  <div class="takeaways">
+    <div class="kt-label">Key Takeaways</div>
+    <ul>
+      <li>The Canvas Parent app isn't a separate account type — it uses the same observer login as the desktop site.</li>
+      <li>The app mainly changes <strong>how</strong> you check Canvas, not <strong>how often</strong> you need to, or what gets surfaced to you.</li>
+      <li>App push notifications follow the same event-based logic as Canvas email notifications, with the same blind spots.</li>
+      <li>The observer account itself is the prerequisite for everything else — app, desktop, or third-party tools.</li>
+    </ul>
+  </div>
+  <div class="faq">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-q">Do I need to download the Canvas Parent app to monitor my child's grades?</div>
+    <p class="faq-a">No — everything available in the app is also accessible through a desktop or mobile browser using the same observer login.</p>
+    <div class="faq-q">Can I get push notifications from the Canvas Parent app?</div>
+    <p class="faq-a">Yes, the app supports push notifications for the same event types covered by Canvas's broader notification system, configurable in the app's settings.</p>
+    <div class="faq-q">Is the Canvas Parent app free?</div>
+    <p class="faq-a">Yes, it's a free app provided by Instructure, the company behind Canvas, available for iOS and Android.</p>
+    <div class="faq-q">Will setting up the app give me access to anything I didn't already have through the website?</div>
+    <p class="faq-a">No — the app surfaces the same data your observer account already has access to on desktop; it doesn't unlock additional permissions or information.</p>
+  </div>
+  <div class="related">
+    <div class="rel-label">Related reading</div>
+    <a href="/resources/canvas-parent-observer-accounts.html">Canvas Parent Observer Accounts: What Parents Need to Know &rarr;</a>
+    <a href="/resources/canvas-notifications-not-enough.html">Why Canvas Notifications Aren't Enough for Many Parents &rarr;</a>
+  </div>
+  <div class="cta-strip">
+    <h3>The app helps you check. Daily Summa means you don't have to.</h3>
+    <p>It uses your existing observer access and sends what changed each day — no app to open.</p>
+    <a href="/signup">Get Started &rarr;</a>
+  </div>
+</article>
+<footer>
+  <div class="footer-logo">Daily<span>Summa</span></div>
+  <div class="footer-links">
+    <a href="/pricing">Pricing</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/contact">Contact</a>
+  </div>
+  <div class="footer-text">© 2026 Daily Summa · hello@dailysumma.com</div>
+</footer>
+</body>
+</html>
