@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3F62JLDDWF.com.dailysumma.app"],
+        "components": [
+          { "/": "/signup*",   "exclude": true, "comment": "Account creation and payment stay in the browser" },
+          { "/": "/join*",     "exclude": true, "comment": "Household invite acceptance stays in the browser" },
+          { "/": "/checkout*", "exclude": true, "comment": "Purchase stays in the browser" },
+          { "/": "/account*",  "exclude": true, "comment": "Plan and payment management stay in the browser" },
+          { "/": "/canvas*",   "exclude": true, "comment": "Canvas OAuth needs a system browser" },
+          { "/": "/dashboard*" },
+          { "/": "/student/*" },
+          { "/": "/preferences*" },
+          { "/": "/billing*" },
+          { "/": "/how-it-works*" },
+          { "/": "/calendar*" }
+        ]
+      }
+    ]
+  }
+}
