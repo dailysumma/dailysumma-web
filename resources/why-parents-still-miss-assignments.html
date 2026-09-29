@@ -80,16 +80,20 @@ footer { padding:40px 80px; background:#080f17; display:flex; align-items:center
 .footer-text { font-size:12px; color:rgba(255,255,255,0.2); }
 @media (max-width:768px) { nav { padding:16px 22px; } footer { padding:30px 22px; } h1 { font-size:30px; } .article-wrap { padding:36px 20px 60px; } }
 </style>
+  <link rel="stylesheet" href="/nav.css">
 </head>
 <body>
 <a href="#main-content" class="skip-nav">Skip to main content</a>
 <nav>
-  <a href="/" class="nav-logo">Daily<span>Summa</span></a>
+  <div class="nav-top">
+    <a href="/" class="nav-logo">Daily<span>Summa</span></a>
+    <a href="/signup" class="nav-cta nav-cta-mobile">Get Started &rarr;</a>
+  </div>
   <div class="nav-actions">
     <a href="/resources/" class="nav-login">Resources</a>
     <a href="/contact" class="nav-login">Contact</a>
     <a href="/login" class="nav-login">Log in</a>
-    <a href="/signup" class="nav-cta">Get Started →</a>
+    <a href="/signup" class="nav-cta nav-cta-desktop">Get Started →</a>
   </div>
 </nav>
 <article class="article-wrap" id="main-content">

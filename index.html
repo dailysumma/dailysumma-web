@@ -1350,18 +1350,23 @@
     .pricing-section { padding: 64px 24px; }
   }
 </style>
+  <link rel="stylesheet" href="/nav.css">
 </head>
 <body>
 <a href="#main-content" class="skip-nav">Skip to main content</a>
 
 <!-- NAV -->
 <nav>
-  <a href="/" class="nav-logo" style="text-decoration:none; color:inherit;">Daily<span>Summa</span></a>
+  <div class="nav-top">
+    <a href="/" class="nav-logo" style="text-decoration:none; color:inherit;">Daily<span>Summa</span></a>
+    <a href="/signup" class="nav-cta nav-cta-mobile">Get Started →</a>
+  </div>
   <div class="nav-actions">
     <a href="/resources/" class="nav-login">Resources</a>
+    <a href="/schools" class="nav-login">For Schools</a>
     <a href="/contact" class="nav-login">Contact</a>
     <a href="/login" class="nav-login">Log in</a>
-    <a href="/signup" class="nav-cta">Get Started →</a>
+    <a href="/signup" class="nav-cta nav-cta-desktop">Get Started →</a>
   </div>
 </nav>
 
@@ -1395,7 +1400,7 @@
       </div>
       <div class="stat-item">
         <div class="stat-number">0</div>
-        <div class="stat-label">Logins required</div>
+        <div class="stat-label">Apps, plus email &amp; text</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">0</div>
@@ -1491,8 +1496,29 @@
 
     <div class="story-cta">
       <a href="/signup" class="btn-dark">Enroll Your Family →</a>
-      <span class="story-note">No app to install &nbsp;·&nbsp; Works on any phone &nbsp;·&nbsp; Cancel anytime</span>
+      <span class="story-note">Email, text, or our app &nbsp;·&nbsp; Works on any phone &nbsp;·&nbsp; Cancel anytime</span>
     </div>
+  </div>
+</section>
+<!-- SMS OPT-IN -->
+<section class="sms-optin" aria-labelledby="sms-heading" style="background:var(--navy); padding:80px 48px;">
+  <div style="max-width:620px; margin:0 auto; text-align:center;">
+    <h2 id="sms-heading" style="font-family:'Playfair Display',serif; font-size:34px; color:var(--cream); margin-bottom:16px;">Get text alerts</h2>
+    <p style="color:rgba(245,240,232,0.75); font-size:17px; line-height:1.6; margin-bottom:32px;">
+      Add your phone number to get quick text updates about your student&rsquo;s assignments, missing work, and grades &mdash; right when they matter.
+    </p>
+    <form method="POST" action="/sms-signup" style="max-width:440px; margin:0 auto; text-align:left;">
+      <input type="tel" name="phone" placeholder="(813) 555-0123" required
+             style="width:100%; padding:15px 18px; border-radius:8px; border:1px solid rgba(201,168,76,0.4); background:rgba(255,255,255,0.06); color:var(--cream); font-size:16px; margin-bottom:16px; font-family:'DM Sans',sans-serif;">
+      <label style="display:flex; align-items:flex-start; gap:10px; color:rgba(245,240,232,0.7); font-size:13px; line-height:1.6; margin-bottom:20px; cursor:pointer;">
+        <input type="checkbox" name="sms_consent" required style="margin-top:3px; flex-shrink:0; width:16px; height:16px; cursor:pointer;">
+        <span>I agree to receive recurring automated text alerts from Daily Summa about my student&rsquo;s assignments, grades, and missing work. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help. See our <a href="/privacy" style="color:var(--gold-light); text-decoration:underline;">Privacy Policy</a> and <a href="/terms" style="color:var(--gold-light); text-decoration:underline;">Terms</a>.</span>
+      </label>
+      <button type="submit"
+              style="width:100%; padding:15px; border-radius:8px; border:none; background:var(--gold); color:var(--navy); font-size:16px; font-weight:600; cursor:pointer; font-family:'DM Sans',sans-serif;">
+        Sign me up &rarr;
+      </button>
+    </form>
   </div>
 </section>
 
@@ -1548,13 +1574,13 @@
       <div class="how-number">03</div>
       <span class="how-icon">📬</span>
       <div class="how-title">Receive Your Daily Summa</div>
-      <div class="how-desc">Three times a day — morning, afternoon, and evening — your family gets a concise briefing covering everything that matters. No login required.</div>
+      <div class="how-desc">Three times a day — morning, afternoon, and evening — your family gets a concise briefing covering everything that matters. Read it in your inbox, by text, or in the app.</div>
     </div>
   </div>
 
   <div class="how-note">
     <span class="how-note-icon">🏫</span>
-    <span><strong>Works with Canvas and Google Classroom</strong> — with Blackboard, D2L, Moodle, and more on the way. <a href="mailto:hello@dailysumma.com" style="color:var(--gold); text-decoration:none;">Contact us</a> if your school uses a different system.</span>
+    <span><strong>Works with Canvas</strong> — with Schoology, Google Classroom, Blackboard, D2L and Moodle on the way. <a href="mailto:hello@dailysumma.com" style="color:var(--gold); text-decoration:none;">Contact us</a> if your school uses a different system.</span>
   </div>
 </section>
 
@@ -1694,7 +1720,7 @@
       <span class="pricing-plan-icon">🎒</span>
       <div class="pricing-plan-name">Student</div>
       <div class="pricing-plan-sub">One student</div>
-      <div class="pricing-plan-amount"><sup>$</sup>3.99</div>
+      <div class="pricing-plan-amount"><sup>$</sup>4.99</div>
       <div class="pricing-plan-period">per month</div>
       <div class="pricing-plan-kids">1 student covered</div>
       <div class="pricing-plan-divider"></div>
@@ -1713,7 +1739,7 @@
       <span class="pricing-plan-icon">👨‍👩‍👧</span>
       <div class="pricing-plan-name">Family</div>
       <div class="pricing-plan-sub">Two students</div>
-      <div class="pricing-plan-amount"><sup>$</sup>6.99</div>
+      <div class="pricing-plan-amount"><sup>$</sup>7.99</div>
       <div class="pricing-plan-period">per month</div>
       <div class="pricing-plan-kids">2 students covered</div>
       <div class="pricing-plan-divider"></div>
@@ -1748,7 +1774,7 @@
   </div>
 
   <div class="pricing-footer">
-    <div class="pricing-footer-text"><strong>➕ Full Text &amp; Email Mirror</strong> — get every email also as a text. Add $2/mo to any plan.</div>
+    <div class="pricing-footer-text"><strong>➕ Full Text &amp; Email Mirror</strong> — get every email also as a text. Add $5.00/mo, unlimited phones to any plan.</div>
     <a href="/pricing" class="pricing-footer-link">See full pricing details →</a>
   </div>
 
@@ -1775,12 +1801,12 @@
       <div class="trust-item">
         <span class="trust-icon">🗑️</span>
         <div class="trust-title">Disconnect anytime</div>
-        <div class="trust-desc">You can revoke our access from your school account settings at any moment. When you cancel, we delete your family's data. No retention, no archives, no exceptions.</div>
+        <div class="trust-desc">You can revoke our access from your school account settings at any moment. When you cancel, we delete your family's data. Nothing is archived or retained for other purposes.</div>
       </div>
       <div class="trust-item">
         <span class="trust-icon">📧</span>
-        <div class="trust-title">Email only — no app</div>
-        <div class="trust-desc">Daily Summa is delivered to your existing inbox. There's nothing to download, no account to manage, and no app requesting permissions on your phone.</div>
+        <div class="trust-title">Delivered how you want it</div>
+        <div class="trust-desc">Daily Summa arrives in your existing inbox, by text, or in our iOS and Android apps. Nothing is required beyond an email address — the apps are there if you want them.</div>
       </div>
       <div class="trust-item">
         <span class="trust-icon">👨‍👩‍👧</span>
@@ -1834,6 +1860,7 @@
   <div class="footer-logo">Daily<span>Summa</span></div>
   <div class="footer-links" style="display:flex; gap:24px;">
     <a href="/pricing" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Pricing</a>
+    <a href="/schools" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">For Schools</a>
     <a href="/privacy" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Privacy Policy</a>
     <a href="/terms" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Terms of Service</a>
     <a href="mailto:hello@dailysumma.com" style="font-size:12px; color:rgba(255,255,255,0.3); text-decoration:none;">Contact</a>

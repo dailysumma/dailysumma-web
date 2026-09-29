@@ -113,6 +113,7 @@
     .contact-label { min-width: auto; }
   }
 </style>
+  <link rel="stylesheet" href="/nav.css">
 </head>
 <body>
 
@@ -129,7 +130,7 @@
   <div class="hero-inner">
     <div class="hero-label">Legal</div>
     <h1 class="hero-title">Privacy Policy</h1>
-    <div class="hero-meta">Daily Summa LLC &nbsp;·&nbsp; Effective May 22, 2026 &nbsp;·&nbsp; Last Updated May 22, 2026</div>
+    <div class="hero-meta">Daily Summa LLC &nbsp;·&nbsp; Effective August 11, 2026 &nbsp;·&nbsp; Revised July 28, 2026</div>
   </div>
 </section>
 
@@ -145,7 +146,7 @@
   <div class="section">
     <div class="section-number">Section 1</div>
     <h2 class="section-title">Who We Are</h2>
-    <p><strong>Daily Summa LLC</strong> is a Florida limited liability company headquartered in Tampa, Florida. We provide a subscription service that connects to your school's learning management system (such as Canvas or Google Classroom) using read-only access you voluntarily authorize, and delivers daily academic digest messages to parents and guardians.</p>
+    <p><strong>Daily Summa LLC</strong> is a Florida limited liability company headquartered in Tampa, Florida. We provide a subscription service that connects to your school's learning management system (currently Canvas) using read-only access you voluntarily authorize, and delivers daily academic digest messages to parents, guardians, and eligible students (aged 18 or older).</p>
     <p>Daily Summa is an independent service and is not affiliated with, endorsed by, sponsored by, or a product of Instructure, Inc. or Canvas LMS. Canvas is a trademark of Instructure, Inc. Daily Summa accesses Canvas solely through API tokens voluntarily generated and provided by parents and guardians who authorize Daily Summa to act on their behalf.</p>
     <div class="contact-block">
       <div class="contact-row"><span class="contact-label">General contact:</span><span class="contact-value"><a href="mailto:hello@dailysumma.com">hello@dailysumma.com</a></span></div>
@@ -235,8 +236,9 @@
     <h2 class="section-title">Third-Party Services</h2>
     <p>Daily Summa uses the following third-party services to operate. Each service receives only the minimum data necessary for its function:</p>
     <ul>
-      <li><strong>Google (Gmail API)</strong> — used exclusively to send digest emails from hello@dailysumma.com. Daily Summa requests only the <code>gmail.send</code> scope and does not read, access, modify, or store any Gmail inbox content, drafts, labels, or email history. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+      <li><strong>Google (Gmail API)</strong> — used to send transactional email (such as account and verification messages) and as a fallback sender for digest emails from hello@dailysumma.com. Daily Summa requests only the <code>gmail.send</code> scope and does not read, access, modify, or store any Gmail inbox content, drafts, labels, or email history. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
       <li><strong>Twilio</strong> — used to deliver SMS alert messages to your phone number when you opt into SMS notifications. Twilio receives your phone number and message content. See <a href="https://www.twilio.com/legal/privacy" target="_blank" rel="noopener">twilio.com/legal/privacy</a>.</li>
+      <li><strong>SendGrid (a Twilio company)</strong> — used as our primary provider for delivering academic digest emails from hello@dailysumma.com. SendGrid receives recipient email addresses and message content. As a Twilio company, SendGrid is covered by the same data protection terms as Twilio. See <a href="https://www.twilio.com/legal/privacy" target="_blank" rel="noopener">twilio.com/legal/privacy</a>.</li>
       <li><strong>Stripe</strong> — used to process subscription payments. Stripe receives payment information directly and we do not store card numbers. See <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a>.</li>
       <li><strong>DigitalOcean</strong> — provides the U.S.-based cloud server infrastructure on which Daily Summa runs. See <a href="https://www.digitalocean.com/legal/privacy-policy" target="_blank" rel="noopener">digitalocean.com/legal/privacy-policy</a>.</li>
     </ul>
@@ -249,8 +251,8 @@
   <div class="section">
     <div class="section-number">Section 6</div>
     <h2 class="section-title">Student Data and FERPA</h2>
-    <p>Daily Summa is designed for use by parents and legal guardians of K–12 students. We access student academic data only through Canvas API access tokens voluntarily generated and provided by the parent or guardian who holds rights to that information.</p>
-    <p>We do not contract directly with schools or school districts in our current model. As a result, we operate as a service used directly by families rather than as a school official under FERPA. We nonetheless treat all student academic data with the care and discretion that FERPA's principles require.</p>
+    <p>Daily Summa is used by two groups: (1) parents and legal guardians of K&#8211;12 students, and (2) eligible students aged 18 or older (including college students) who connect their own accounts. We access student academic data only through Canvas API access authorization voluntarily provided by the parent, guardian, or eligible student who holds rights to that information.</p>
+    <p>Daily Summa currently operates as a service used directly by families and students rather than through contracts with schools or districts. In this direct-to-user model, we are not acting as a &ldquo;school official&rdquo; under FERPA; our access to educational records is authorized by the parent, guardian, or eligible student who connects their own account. Should we in the future partner directly with educational institutions, we will update this policy and enter into any required data-protection agreements, including FERPA-compliant terms, before operating in that capacity. In all cases, we treat student academic data with the care and discretion that FERPA&rsquo;s principles require.</p>
     <p>We do not:</p>
     <ul>
       <li>Sell student data</li>
@@ -265,7 +267,7 @@
   <div class="section">
     <div class="section-number">Section 7</div>
     <h2 class="section-title">Children's Privacy (COPPA)</h2>
-    <p>Daily Summa is a service for parents and guardians aged 18 and older. We do not knowingly collect personal information directly from children under the age of 13. Student academic data is collected from Canvas on behalf of the parent or guardian who enrolled, not directly from the student.</p>
+    <p>Daily Summa is a service for parents and guardians aged 18 and older, and for eligible students aged 18 or older who connect their own accounts. We do not knowingly collect personal information directly from children under the age of 13. For accounts created by a parent or guardian, student academic data is collected from Canvas on behalf of that parent or guardian rather than directly from the student. For accounts created by an eligible student (aged 18 or older), that student authorizes and manages their own connection directly.</p>
     <p>If you believe we have inadvertently collected information from a child under 13 in a way that conflicts with COPPA, please contact us at <a href="mailto:privacy@dailysumma.com">privacy@dailysumma.com</a> and we will delete it promptly.</p>
   </div>
 
@@ -280,7 +282,8 @@
       <li>Cached grade and submission data is deleted within 7 days of your cancellation request</li>
       <li>Your email address is retained for up to 30 days for transactional purposes (final billing confirmation, cancellation confirmation) and then deleted</li>
     </ul>
-    <p>To cancel your subscription or request deletion of your data, email <a href="mailto:privacy@dailysumma.com">privacy@dailysumma.com</a> with your family name and the subject line "Cancel My Account." We will confirm cancellation and data deletion within 7 days.</p>
+    <p>You can manage your subscription and account directly from your account settings. From the preferences page you may <strong>cancel your subscription</strong> at any time (you keep access through the end of your current billing period, and your account and data remain intact so you can resubscribe later), or <strong>permanently delete your account</strong>, which immediately cancels any active subscription and removes your account and all associated personal data. Account deletion is immediate and irreversible.</p>
+    <p>You may also email <a href="mailto:privacy@dailysumma.com">privacy@dailysumma.com</a> with your family name and the subject line "Cancel My Account" if you prefer us to process a cancellation or deletion on your behalf. We will confirm within 7 days.</p>
     <p>You can revoke Daily Summa's access to your Canvas data at any time by deleting the access token from your Canvas account settings under Account → Settings → Approved Integrations.</p>
   </div>
 
